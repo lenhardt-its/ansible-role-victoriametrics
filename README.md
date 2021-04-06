@@ -1,4 +1,4 @@
-# Ansible Role: Pvictoriametrics
+# Ansible Role: VictoriaMetrics
 
 [![ubuntu-18](https://img.shields.io/badge/ubuntu-18.x-orange?style=flat&logo=ubuntu)](https://ubuntu.com/)
 [![ubuntu-20](https://img.shields.io/badge/ubuntu-20.x-orange?style=flat&logo=ubuntu)](https://ubuntu.com/)
