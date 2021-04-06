@@ -118,7 +118,7 @@
 
   - name: propagate binaries
     copy:
-      src: "/tmp/victoriametrics-{{ victoriametrics_version }}.linux-{{ go_arch }}/victoria-metrics-prod"
+      src: "/tmp/victoria-metrics-prod"
       dest: "{{ victoriametrics_binary_install_dir }}/victoriametrics"
       mode: 0755
       owner: root
