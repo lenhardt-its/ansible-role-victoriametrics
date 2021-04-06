@@ -87,7 +87,7 @@
     set_fact:
       victoriametrics_checksum: "{{ item.split(' ')[0] }}"
     with_items: "{{ _checksums }}"
-    when: "('linux-' + go_arch + '.tar.gz') in item"
+    when: "('victoria-metrics-v' + victoriametrics_version + '.tar.gz') in item"
     become: true
     tags: victoriametrics
 
