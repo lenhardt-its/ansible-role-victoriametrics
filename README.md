@@ -17,7 +17,6 @@ Deploy [victoriametrics](https://github.com/victoriametrics/victoriametrics) mon
 ## Requirements
 
 - Ansible >= 2.9 (It might work on previous versions, but we cannot guarantee it)
-- Community Packages: `ansible-galaxy collection install community.general`
 
 ## Role Variables
 
@@ -32,7 +31,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | `victoriametrics_binary_install_dir` | /usr/local/bin | Path to directory with victoriametrics binaries |
 | `victoriametrics_system_user` | prometheus | victoriametrics system user |
 | `victoriametrics_system_group` | victoriametrics | victoriametrics system group |
-| `victoriametrics_allow_firewall` | prometheus | Install and configure Firewalld and allow victoriametrics_web_listen_port (enabled/disabled) |
+| `victoriametrics_limit_nofile` | 16384 | set nofile limit in systemd unit |
 | `victoriametrics_web_listen_address` | "0.0.0.0" | Address on which victoriametrics will be listening |
 | `victoriametrics_web_listen_port` | 8428 | Port on which victoriametrics will be listening |
 | `victoriametrics_log_level` | warn | Set loglevel |

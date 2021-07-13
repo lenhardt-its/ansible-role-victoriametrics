@@ -30,6 +30,8 @@ PrivateTmp=yes
 LimitAS=infinity
 LimitRSS=infinity
 LimitCORE=infinity
+LimitNOFILE={{ victoriametrics_limit_nofile | default('16384') }}
+LimitMEMLOCK=infinity
 
 [Install]
 WantedBy=multi-user.target
