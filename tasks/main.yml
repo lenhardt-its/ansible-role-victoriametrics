@@ -45,6 +45,7 @@
   when: __victoriametrics_is_installed.stat.exists
   become: true
   tags: victoriametrics
+  check_mode: false
 
 - block:
   - name: get latest release
